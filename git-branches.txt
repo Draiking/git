@@ -32,3 +32,11 @@
 
 можно посмотреть удаленные репозитории
     git remote
+
+    git push origin master
+    git push github master
+
+получить все изменения с удаленного сервера
+
+    git fetch
+
