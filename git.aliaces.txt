@@ -12,3 +12,5 @@
     git config --global alias.br branch
     git config --global --replace-all alias.c "commit -a"
     git config --global alias.s status
+    git config --global alias.p "push origin"
+    git config --global alias.pm "push origin master"
