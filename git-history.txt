@@ -6,7 +6,7 @@
     git log --pretty=oneline // вывод в одну стоку
     git log --graph --color-words --color --source --decorate --all
     git log --graph --oneline --all
-    git log --pretty=format:"%h - %an, %ar : %s"
+    git log --pretty=format:"%h - %an, %ar : %s" --graph
 
 гит вычисляет sha1 - 40 символов
 
