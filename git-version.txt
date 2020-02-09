@@ -1,0 +1,14 @@
+создаем тег
+    git tag v1.3.0
+    git tag -a v1.4.0 -m "Новый комментарий"
+
+смотрим на список
+    git tag
+    git tag -l v1.4*
+
+посмотреть что там было в тегах
+    git show v1.1.0
+    git show ac5f4317ec9ac3da9338aa1f9e77e1a6344b6068
+
+удалить тег
+    git tag -d v1.3.0
