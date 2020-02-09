@@ -27,3 +27,8 @@
 Добавляем удаленный репозиторий
 
     git remote add origin https://github.com/Gordondalos/git.git
+    вместо origin можно указать любое название например github
+    git remote add github https://github.com/Gordondalos/git.git
+
+можно посмотреть удаленные репозитории
+    git remote
