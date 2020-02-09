@@ -44,3 +44,12 @@
 
     git branch -r
 
+удаление удаленных веток
+
+    git push origin :to_delete
+    git push origin :develop
+
+создаем локальную ветку сразу с подключением удаленной
+
+    git branch develop origin/develop
+
