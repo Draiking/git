@@ -2,6 +2,10 @@
     git tag v1.3.0
     git tag -a v1.4.0 -m "Новый комментарий"
 
+установить на страый коммит можно так (добавляем хешь комита)
+        git tag -a v1.2.0 -m "Старая тема" beefeb1
+        git tag v1.2.0 1a68e0da14f509376dbd1d80712c87dc96997332
+
 смотрим на список
     git tag
     git tag -l v1.4*
@@ -9,6 +13,15 @@
 посмотреть что там было в тегах
     git show v1.1.0
     git show ac5f4317ec9ac3da9338aa1f9e77e1a6344b6068
+    git show HEAD
 
 удалить тег
     git tag -d v1.3.0
+
+переходим на тег с созданием ветки
+
+    git checkout -b old_version v1.2.0
+    git checkout -b old_version ac5f4317ec9ac3da9338aa1f9e77e1a6344b6068
+
+теги сами не попадаут на удаленку нужно их пушить
+    git push origin v1.2.0
