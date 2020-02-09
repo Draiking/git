@@ -4,8 +4,11 @@
 
     например
 
-    git config --global alias.gg 'git log --pretty=format:"%h -%d %s %cd"'
+--replace-all // перезеписывает все алиасы
+
+    git config --global alias.gg "git log --pretty=format:"%h -%d %s %cd" // этот что то не добавляется
+
     git config --global alias.co checkout
     git config --global alias.br branch
-    git config --global alias.ci commit
+    git config --global --replace-all alias.c "commit -a"
     git config --global alias.st status
