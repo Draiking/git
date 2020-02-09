@@ -1,6 +1,22 @@
 1. Посмотреть историю изменений
     git log
     git log - 2 // вывесли только два комита
-    git log -p
-    git log --stat
-    git log --pretty=oneline
+    git log -p // видим что было изменено
+    git log --stat // вывод статистики
+    git log --pretty=oneline // вывод в одну стоку
+    git log --graph --color-words --color --source --decorate --all
+    git log --graph --oneline --all
+    git log --pretty=format:"%h - %an, %ar : %s"
+
+гит вычисляет sha1 - 40 символов
+
+    git log --since=2.week // указываем интервал
+    git log --until=1.week // указываем время назад
+
+    git log --since=2020-01-01 --until=2020-03-09
+
+    git log --author="gordondalos" // нашли все коммиты от гордондалоса
+
+    git blame git-history.txt // выводим все что известно по файлу там хеши и даты кто изменил
+
+
